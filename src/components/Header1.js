@@ -19,15 +19,15 @@ const homepage = process.env.PUBLIC_URL;
 const pages = [
   {
     pageName: "Books",
-    address: `${homepage}#books`,
+    address: `${homepage}/#books`,
   },
   {
     pageName: "About Us",
-    address: `${homepage}#aboutUs`,
+    address: `${homepage}/#aboutUs`,
   },
   {
     pageName: "How It Works",
-    address: `${homepage}#howItWorks`,
+    address: `${homepage}/#howItWorks`,
   },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
