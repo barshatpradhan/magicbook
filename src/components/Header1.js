@@ -13,18 +13,20 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
+const homepage = process.env.homepage;
+
 const pages = [
   {
     pageName: "Books",
-    address: "https://axalbeda.github.io/magicbook/#/#books",
+    address: `${homepage}/#books`,
   },
   {
     pageName: "About Us",
-    address: "https://axalbeda.github.io/magicbook/#/#aboutUs",
+    address: "https://axalbeda.github.io/magicbook/#aboutUs",
   },
   {
     pageName: "How It Works",
-    address: "https://axalbeda.github.io/magicbook/#/#howItWorks",
+    address: "https://axalbeda.github.io/magicbook/#howItWorks",
   },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -63,7 +65,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="https://axalbeda.github.io/magicbook/#/"
+            href={process.env.homepage}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
