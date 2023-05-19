@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const homepage = process.env.homepage;
+const homepage = process.env.PUBLIC_URL;
 
 const pages = [
   {
@@ -65,7 +65,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href={process.env.homepage}
+            href={process.env.PUBLIC_URL}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
