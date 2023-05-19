@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/magicbook/static/css/main.e6c13ad2.css",
-    "main.js": "/magicbook/static/js/main.0507fa3a.js",
+    "main.js": "/magicbook/static/js/main.e3eec7c0.js",
     "static/js/787.372aafe0.chunk.js": "/magicbook/static/js/787.372aafe0.chunk.js",
     "static/media/Anton-Regular.ttf": "/magicbook/static/media/Anton-Regular.1a410a20d8d683de047e.ttf",
     "index.html": "/magicbook/index.html",
     "main.e6c13ad2.css.map": "/magicbook/static/css/main.e6c13ad2.css.map",
-    "main.0507fa3a.js.map": "/magicbook/static/js/main.0507fa3a.js.map",
+    "main.e3eec7c0.js.map": "/magicbook/static/js/main.e3eec7c0.js.map",
     "787.372aafe0.chunk.js.map": "/magicbook/static/js/787.372aafe0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0507fa3a.js"
+    "static/js/main.e3eec7c0.js"
   ]
 }
