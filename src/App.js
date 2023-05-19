@@ -12,12 +12,12 @@ function App() {
   return (
     <>
       <Header1 />
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/createbook" element={<CreateBook />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 }

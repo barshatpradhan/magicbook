@@ -29,7 +29,7 @@ function BookList() {
           How It Works
         </Typography>
       </Box>
-      <img src="/howItWorks.png" />
+      <img src="howItWorks.png" />
     </Box>
   );
 }
