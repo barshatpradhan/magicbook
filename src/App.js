@@ -1,9 +1,12 @@
 import HomePage from "./modules/HomePage";
 import Header1 from "./components/Header1";
-import HowitWorks from "./components/HowItWorks";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import CreateBook from "./pages/createBook";
-import ImageUpload from "./api/imageModifier";
 
 function App() {
   return (

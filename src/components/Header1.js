@@ -14,9 +14,9 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = [
-  { pageName: "Books", address: "/#books" },
-  { pageName: "About Us", address: "/#aboutUs" },
-  { pageName: "How It Works", address: "/#howItWorks" },
+  { pageName: "Books", address: "#books" },
+  { pageName: "About Us", address: "#aboutUs" },
+  { pageName: "How It Works", address: "#howItWorks" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
