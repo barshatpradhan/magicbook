@@ -12,12 +12,12 @@ function App() {
   return (
     <>
       <Header1 />
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/createbook" element={<CreateBook />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </>
   );
 }
