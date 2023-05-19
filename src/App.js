@@ -11,8 +11,9 @@ import CreateBook from "./pages/createBook";
 function App() {
   return (
     <>
-      <Header1 />
       <Router basename={process.env.PUBLIC_URL}>
+        <Header1 />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/createbook" element={<CreateBook />} />

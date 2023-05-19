@@ -12,21 +12,22 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import Link from "@mui/material/Link";
 
 const homepage = process.env.PUBLIC_URL;
 
 const pages = [
   {
     pageName: "Books",
-    address: `${homepage}/#books`,
+    address: `${homepage}#books`,
   },
   {
     pageName: "About Us",
-    address: "https://axalbeda.github.io/magicbook/#aboutUs",
+    address: `${homepage}#aboutUs`,
   },
   {
     pageName: "How It Works",
-    address: "https://axalbeda.github.io/magicbook/#howItWorks",
+    address: `${homepage}#howItWorks`,
   },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -110,7 +111,9 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.pageName} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.pageName}</Typography>
+                  <a style={{ textDecoration: "none" }} href={page.address}>
+                    {page.pageName}
+                  </a>
                 </MenuItem>
               ))}
             </Menu>
