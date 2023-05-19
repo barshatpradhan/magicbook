@@ -14,7 +14,7 @@ function App() {
       <Header1 />
       <HashRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/s" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/createbook" element={<CreateBook />} />
         </Routes>
       </HashRouter>
