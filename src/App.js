@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header1 />
-      <HashRouter>
+      <HashRouter basename={process.env.HomePage}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/createbook" element={<CreateBook />} />
