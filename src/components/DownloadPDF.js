@@ -3,7 +3,7 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 import { Box } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
 
-const App = (props) => {
+const DownloadPdf = (props) => {
   const { name, tale, imgURL } = props;
   console.log("downloadpdf");
   const onClick = (e) => {
@@ -47,4 +47,4 @@ const App = (props) => {
   );
 };
 
-export default App;
+export default DownloadPdf;

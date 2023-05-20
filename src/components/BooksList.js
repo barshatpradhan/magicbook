@@ -10,25 +10,27 @@ function BookList() {
       book: "tale1",
       picture: "tale1.jpg",
       name: "hide and seek",
-      anotation: "bla bla text",
+      anotation:
+        "Abe was a real Service Dog who dedicated his life assisting BJ, a good family friend. Service Dogs are smart, well trained, well behaved, dedicated, and committed to ensuring their master is safe. This book is intended to bring an awareness of their importance to early readers.",
     },
     {
       book: "tale2",
       picture: "tale2.jpg",
-      name: "hide and seek",
-      anotation: "bla bla text",
+      name: "The Lunker",
+      anotation:
+        "Let's go fishing and a rhyming in this free illustrated children's book. Monday through Saturday was dad's to take but come Sunday, the lad caught a lunker. And boy! Wasn't he absolutely delighted?",
     },
     {
       book: "tale3",
       picture: "tale3.jpg",
-      name: "hide and seek",
-      anotation: "bla bla text",
+      name: "Hammy The Hamster",
+      anotation: "sizarmace",
     },
     {
       book: "tale4",
       picture: "tale4.jpg",
-      name: "hide and seek",
-      anotation: "bla bla text",
+      name: "The Tooth Fairies",
+      anotation: "mainc gamogichire :D",
     },
   ];
 

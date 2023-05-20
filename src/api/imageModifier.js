@@ -13,13 +13,13 @@ import { SettingsEthernet } from "@mui/icons-material";
 const imageFunc = async (image, setUrl, setGenerating, setError) => {
   const data = new FormData();
   data.append("image", image);
-  data.append("type", "3d_cartoon");
+  data.append("type", "pixar");
   console.log(data);
   const options = {
     method: "POST",
     url: "https://cartoon-yourself.p.rapidapi.com/facebody/api/portrait-animation/portrait-animation",
     headers: {
-      "X-RapidAPI-Key": "0eb3e1bbe8msh6f842f790fccdcdp16dbe0jsn61b893c42b88",
+      "X-RapidAPI-Key": "5d11e925f7mshbefbf5220aae9c1p162289jsn4a6a1e041cdd",
       "X-RapidAPI-Host": "cartoon-yourself.p.rapidapi.com",
     },
     data: data,
@@ -29,10 +29,11 @@ const imageFunc = async (image, setUrl, setGenerating, setError) => {
     console.log("aqaa");
     const response = await Axios.request(options);
     console.log(response.data);
-    console.log("try");
-    setUrl("https://images.dog.ceo/breeds/beagle/n02088364_11828.jpg");
+    console.log("trsdy");
+    setUrl(response.data.data.image_url);
+    setGenerating(false);
   } catch (error) {
-    console.log("error, please try again later...");
+    console.log(error);
     setError("error, please try again later...");
     setGenerating(false);
   }

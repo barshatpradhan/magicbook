@@ -10,6 +10,7 @@ import Image from "mui-image";
 import Grid from "@mui/material/Grid";
 import { Paper } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
+import { useEffect } from "react";
 
 export default function BasicTextFields(props) {
   const [image, setImage] = useState("");
@@ -18,10 +19,15 @@ export default function BasicTextFields(props) {
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState("");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const bookData = useLocation().state;
   console.log(bookData);
 
   const handleGenerate = () => {
+    setError("");
     setGenerating(true);
     imageFunc(image, setUrl, setGenerating, setError);
   };
@@ -41,7 +47,7 @@ export default function BasicTextFields(props) {
               variant="h3"
               sx={{ margin: "30px 0px 10px 0px" }}
             >
-              {bookData.book}
+              {bookData.name}
             </Typography>
             <Image
               src={bookData.imageUrl}

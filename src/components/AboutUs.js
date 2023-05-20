@@ -26,7 +26,7 @@ function BookList() {
         }}
       >
         <Typography variant="h2" gutterBottom>
-          About Us
+          ABOUT US{" "}
         </Typography>
       </Box>
       <Container>

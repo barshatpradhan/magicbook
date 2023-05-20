@@ -26,7 +26,7 @@ function BookList() {
         }}
       >
         <Typography variant="h2" gutterBottom>
-          How It Works
+          HOW IT WORKS
         </Typography>
       </Box>
       <img src="howItWorks.png" />
