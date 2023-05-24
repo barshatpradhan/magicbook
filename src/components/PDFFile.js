@@ -70,7 +70,7 @@ const PDFFile = (props) => {
       {pages.map((page, index) => {
         return (
           <Page key={index} style={{ ...styles.body }}>
-            <Image style={styles.image} src={page.image} />
+            <Image style={styles.image} src={`/${page.image}`} />
             <Text style={styles.text}>{page.text}</Text>
             <Text
               style={styles.pageNumber}
