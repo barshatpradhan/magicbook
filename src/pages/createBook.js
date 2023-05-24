@@ -51,7 +51,7 @@ export default function BasicTextFields(props) {
               {bookData.name}
             </Typography>
             <Image
-              src={`${process.env.PUBLIC_URL}/${bookData.picture}}}
+              src={`${process.env.PUBLIC_URL}/${bookData.picture}`}
               //           height="
               // 100%
               // "
