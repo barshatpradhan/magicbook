@@ -3,35 +3,10 @@ import TestCard from "../components/TestCard.js";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { getBookList } from "../api/bookInfoProvider.js";
 
 function BookList() {
-  const books = [
-    {
-      book: "tale1",
-      picture: "tale1.jpg",
-      name: "hide and seek",
-      anotation: "bla bla text",
-    },
-    {
-      book: "tale2",
-      picture: "tale2.jpg",
-      name: "hide and seek",
-      anotation: "bla bla text",
-    },
-    {
-      book: "tale3",
-      picture: "tale3.jpg",
-      name: "hide and seek",
-      anotation: "bla bla text",
-    },
-    {
-      book: "tale4",
-      picture: "tale4.jpg",
-      name: "hide and seek",
-      anotation: "bla bla text",
-    },
-  ];
-
+  const books = getBookList();
   return (
     <Box
       id="books"

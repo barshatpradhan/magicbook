@@ -3,13 +3,15 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import Typography from "@mui/material/Typography";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import DownloadPDF from "../components/DownloadPDF";
 import imageFunc from "../api/imageModifier";
 import Image from "mui-image";
 import Grid from "@mui/material/Grid";
 import { Paper } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
+import { useEffect } from "react";
+import { getBookInfo } from "../api/bookInfoProvider";
 
 export default function BasicTextFields(props) {
   const [image, setImage] = useState("");
@@ -18,10 +20,15 @@ export default function BasicTextFields(props) {
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState("");
 
-  const bookData = useLocation().state;
-  console.log(bookData);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { book } = useParams();
+  const bookData = getBookInfo(book);
 
   const handleGenerate = () => {
+    setError("");
     setGenerating(true);
     imageFunc(image, setUrl, setGenerating, setError);
   };
@@ -41,10 +48,10 @@ export default function BasicTextFields(props) {
               variant="h3"
               sx={{ margin: "30px 0px 10px 0px" }}
             >
-              {bookData.book}
+              {bookData.name}
             </Typography>
             <Image
-              src={bookData.imageUrl}
+              src={"tale1.jpg"}
               //           height="
               // 100%
               // "
@@ -108,7 +115,7 @@ inherit
                 variant="contained"
                 fullWidth="true"
                 component="label"
-                sx={{ margin: "30px 0px" }}
+                sx={{ marginTop: "30px" }}
                 disabled={name == ""}
               >
                 Upload Photo
@@ -122,12 +129,17 @@ inherit
                   }}
                 />
               </Button>
+              <Typography color="red" variant="s7" marginBottom="30px">
+                *photo should contain face, max size : 2000px:2000px, 2mb
+              </Typography>
+
               <Button
                 variant="contained"
                 disabled={image == "" || name == ""}
                 color="success"
                 fullWidth="true"
                 onClick={handleGenerate}
+                sx={{ marginTop: "30px" }}
               >
                 GENERATE BOOK
               </Button>

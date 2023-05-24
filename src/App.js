@@ -1,12 +1,7 @@
-import HomePage from "./modules/HomePage";
+import HomePage from "./pages/HomePage";
 import Header1 from "./components/Header1";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  HashRouter,
-} from "react-router-dom";
 import CreateBook from "./pages/createBook";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -16,7 +11,7 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/createbook" element={<CreateBook />} />
+          <Route path="/createbook/:book" element={<CreateBook />} />
         </Routes>
       </Router>
     </>

@@ -26,10 +26,23 @@ function BookList() {
         }}
       >
         <Typography variant="h2" gutterBottom>
-          How It Works
+          HOW IT WORKS
         </Typography>
       </Box>
-      <img src="howItWorks.png" />
+      <Box
+        sx={{
+          flexGrow: 1,
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "30px",
+          flexWrap: "wrap",
+        }}
+      >
+        <img src="step1.png" style={{ width: 250, margin: 20 }} />
+        <img src="step2.png" style={{ width: 250, margin: 20 }} />
+        <img src="step3.png" style={{ width: 250, margin: 20 }} />
+        <img src="step4.png" style={{ width: 250, margin: 20 }} />
+      </Box>
     </Box>
   );
 }

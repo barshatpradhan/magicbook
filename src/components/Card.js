@@ -12,8 +12,12 @@ export default function ActionAreaCard(props) {
   const anotation = props.anotation;
   return (
     <>
-      <Link to="/createbook" state={{ ...props }}>
-        <Card sx={{ width: 320, m: "auto" }}>
+      <Link
+        to={`/createbook/${props.book}`}
+        state={{ ...props }}
+        style={{ textDecoration: "none" }}
+      >
+        <Card sx={{ width: 320, height: 300, m: "auto" }}>
           <CardActionArea>
             <CardMedia
               component="img"
