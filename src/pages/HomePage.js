@@ -3,7 +3,8 @@ import BooksList from "../components/BooksList.js";
 import HowItWorks from "../components/HowItWorks.js";
 import AboutUs from "../components/AboutUs.js";
 import Box from "@mui/material/Box";
-
+import ContactUs from "../components/ContactUs.js";
+import Footer from "../components/Footer.js";
 function HomePage() {
   return (
     <Box
@@ -17,6 +18,8 @@ function HomePage() {
       <BooksList />
       <HowItWorks />
       <AboutUs />
+      <ContactUs />
+      <Footer />
     </Box>
   );
 }

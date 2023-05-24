@@ -26,15 +26,12 @@ const imageFunc = async (image, setUrl, setGenerating, setError) => {
   };
   console.log``;
   try {
-    console.log("aqaa");
     const response = await Axios.request(options);
-    console.log(response.data);
-    console.log("trsdy");
     setUrl(response.data.data.image_url);
     setGenerating(false);
   } catch (error) {
     console.log(error);
-    setError("error, please try again later...");
+    setError(error.response.data.error_msg);
     setGenerating(false);
   }
 };

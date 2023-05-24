@@ -13,7 +13,7 @@ export default function ActionAreaCard(props) {
   return (
     <>
       <Link
-        to="/createbook"
+        to={`/createbook/${props.book}`}
         state={{ ...props }}
         style={{ textDecoration: "none" }}
       >

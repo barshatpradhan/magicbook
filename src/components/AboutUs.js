@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Container } from "@mui/material";
 
-function BookList() {
+function AboutUS() {
   return (
     <Box
       id="aboutUs"
@@ -57,4 +57,4 @@ function BookList() {
   );
 }
 
-export default BookList;
+export default AboutUS;
