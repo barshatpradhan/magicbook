@@ -23,7 +23,7 @@ function BookList() {
         }}
       >
         <Typography variant="h2" gutterBottom>
-          BOOKSS
+          BOOKS
         </Typography>
       </Box>
       <Box sx={{ marginLeft: "30px", marginRight: "30px" }}>
