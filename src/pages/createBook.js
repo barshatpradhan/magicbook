@@ -51,7 +51,7 @@ export default function BasicTextFields(props) {
               {bookData.name}
             </Typography>
             <Image
-              src={`${bookData.picture}`}
+              src={`/${bookData.picture}`}
               //           height="
               // 100%
               // "
