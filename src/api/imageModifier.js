@@ -19,8 +19,8 @@ const imageFunc = async (image, setUrl, setGenerating, setError) => {
     method: "POST",
     url: "https://cartoon-yourself.p.rapidapi.com/facebody/api/portrait-animation/portrait-animation",
     headers: {
-      "X-RapidAPI-Key": "5d11e925f7mshbefbf5220aae9c1p162289jsn4a6a1e041cdd",
-      "X-RapidAPI-Host": "cartoon-yourself.p.rapidapi.com",
+      "X-RapidAPI-Key": "942bb602ecmshdfffc1d812d18a6p1efa34jsnd620d2405e11",
+      "X-RapidAPI-Host": "x-rapidapi-host: cartoon-yourself.p.rapidapi.com",
     },
     data: data,
   };
